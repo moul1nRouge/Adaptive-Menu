@@ -1,4 +1,4 @@
-
+const body = document.querySelector('body');
 const btn = document.getElementById("btn");
 const menu = document.getElementById('menuMobile');
 const overlay = document.getElementById('overlay');
@@ -19,6 +19,7 @@ btn.addEventListener('click', function() {
       line3.classList.add("activeLine3");
       menu.style.display = 'block';
       overlay.style.display = 'block';
+      body.style.overflowY = 'hidden';
     }
 });
 
@@ -26,9 +27,11 @@ document.addEventListener('click',function(event){
     if(!event.target.closest('#overlay')){
         menu.style.display = 'active';
         overlay.style.display = 'active';
+        body.style.over
     }else{
         menu.style.display = 'none';
         overlay.style.display = 'none';
+        body.style.overflowY = 'visible';
         line1.classList.remove("activeLine1");
         line2.classList.remove("activeLine2");
         line3.classList.remove("activeLine3");
