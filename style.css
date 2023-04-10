@@ -1,4 +1,4 @@
-@
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 *,
@@ -135,7 +135,7 @@ a:hover{
 /*      intro      */
 .intro{
     width: 100%;
-    height: 700px;
+    height: 100vh;
     background: url("img/home.jpg");
     background-size: cover;
     background-position: center;
@@ -277,7 +277,7 @@ a:hover{
 /*         dish_price        */
 .dish-price{
     width: 100%;
-    height:640px;
+    height:700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,12 +294,16 @@ a:hover{
 
 .text{
     width: 42%;
-    height: 100%;
+    height: 85%;
     color: #F5F5F7;
     padding: 40px 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.text h1{
+    color: #99e54d;
 }
 
 .text h1,h2{
@@ -308,6 +312,7 @@ a:hover{
 
 .text h2{
     font-size: 1.25rem;
+    position: relative;
 }
 
 .text p{
@@ -316,7 +321,7 @@ a:hover{
 
 .dish-price__container img{
     width: 45%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
     border-radius: 50px;
     background-size: cover;
@@ -379,14 +384,185 @@ a:hover{
     background-repeat: no-repeat;
 }
 
+
+.menu{
+    width: 100%;
+    height: 1520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu__container{
+    width: 1200px;
+    height: 90%;
+    color: #F5F5F7;
+    flex-direction: column;
+}
+
+.header-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    letter-spacing: 2px;
+
+}
+
+.header-menu h1{
+    color: #8ae132;
+}
+
+.header-menu h4{
+    font-family: 'Raleway',sans-serif;
+}
+
+.block-menu{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menuImage{
+    position: relative;
+    width: 540px;
+    height: 640px;
+    margin: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.menuImage img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.menuImage h3{
+    margin: 25px auto 0;
+    font-size: 1.125rem;
+}
+
+.menuImage button{
+    width: 200px;
+    height: 60px;
+    margin: 25px auto 0;
+    font-weight: lighter;
+    text-transform: uppercase;
+    background-color: #99e54d;
+    color: #1a1a1a;
+    font-size: 16px;
+    border-radius: 35px;
+    font-family: 'Raleway',sans-serif;
+}
+
+.menuImage button:hover{
+    color: #1a1a1a;
+    background-color: #8ae132;
+    cursor: pointer;
+}
+
+
+.with-us{
+    margin: 50px 0;
+    width: 100%;
+    height: 750px;
+    background: url("img/chilly.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.wu_text__block{
+    margin-left: 20%;
+    width: 400px;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #F5F5F7;
+}
+
+.wu_text__block h1{
+    font-size: 3rem;
+    margin: 30px 0;
+}
+
+.discount_wu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #99e54d;
+    color: #1a1a1a;
+}
+
+.discount_wu h1,h4{
+    margin: 5px 0;
+}
+
+form{
+    width: 700px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+input{
+    width: 400px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 50px;
+}
+
+form button{
+    margin: 0 15px;
+    width: 150px;
+    height: 54px;
+    border-radius: 50px;
+    background-color: #99e54d;
+    transition: .3s linear;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: #8ae132;
+}
+
 @media screen and (min-width: 760px) and (max-width: 1110px){
     .card_section{
         height: 900px;
     }
 }
 
+@media screen and (min-width: 760px) and (max-width: 1160px){
+    .menu{
+        height: 2900px;
+    }
+}
 
-@media screen and (max-width: 760px){
+
+@media screen and (max-width: 764px){
 
     .nav{
         display: none;
@@ -469,6 +645,7 @@ a:hover{
     }
 
     .intro{
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -512,17 +689,36 @@ a:hover{
     }
 
     .card_section{
-        height: 550px;
+        height: 600px;
     }
     .card__container{
+        margin-top: 0;
+        height: 100%;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
+    .card__container:before{
+        width: 60%;
+        height: 2px;
+        margin: 12px 0;
+        content: " ";
+        background-color: #99e54d;
+    }
+    .card__container:after{
+        width: 60%;
+        height: 2px;
+        margin: 12px 0;
+        content: " ";
+        background-color: #99e54d;
+    }
+
+
     .card{
-        width: 250px;
+        width: 80%;
         height: 150px;
-        border-radius: 25px;
         margin: 10px 0;
+        border-radius: 25px;
     }
 
     .card1,.card2,.card3{
@@ -531,7 +727,7 @@ a:hover{
     }
 
     .dish-price{
-        height: 800px;
+        height: 900px;
     }
 
     .dish-price__container{
@@ -545,10 +741,14 @@ a:hover{
         width: 80%;
     }
 
+    .text h1{
+        color: #99e54d;
+    }
+
     .dish-price__container img{
         margin-left: 0;
         width: 80%;
-        height: 50%;
+        height: 40%;
         object-fit: cover;
         border-radius: 20px;
         background-size: cover;
@@ -559,4 +759,89 @@ a:hover{
         display: none;
     }
 
+    .menu{
+        height: 2900px;
+    }
+
+    .header-menu{
+        height: 1%;
+        width: 100%;
+        padding: 0 50px;
+        letter-spacing: 1px;
+    }
+    
+    .block-menu{
+        margin-top: 60px;
+    }
+
+    .header-menu h1{
+        color: #99e54d;
+        margin: 10px 0;
+        font-size: 2.25rem;
+        border-bottom: 2px solid #8ae132;
+        padding: 5px;
+    }
+    
+    .menuImage{
+        width: 80%;
+    }
+    
+    .menuImage img{
+        width: 80%;
+
+    }
+
+    .with-us__container{
+        width: 100%;
+
+    }
+    .wu_text__block{
+        align-items: center;
+        margin-left: 0;
+        width: 100%;
+        padding: 0 10%;
+        text-align: center;
+    }
+    
+    .wu_text__block h1{
+        font-size: 3rem;
+        margin: 30px 0;
+    }
+    
+    .discount_wu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #99e54d;
+        color: #1a1a1a;
+    }
+
+    .discount_wu h1,h4{
+        margin: 5px 0;
+    }
+
+    form{
+        width: 80%;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    input{
+        width: 100%;
+        height: 50px;
+        font-size: 1.1rem;
+        border-radius: 50px;
+    }
+    
+    form button{
+        margin: 20px 15px;
+    }
 }
+
