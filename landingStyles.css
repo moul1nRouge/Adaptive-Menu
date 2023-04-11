@@ -257,6 +257,7 @@
 .card_block{
     width: 100%;
     height: 100%;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,7 +273,7 @@
     flex-direction: column;
     width: 400px;
     height: 500px;
-    margin: 20px 20px;
+    margin: 0 20px;
     border-radius: 50px;
     padding: 5%;
 }
@@ -346,6 +347,7 @@
     width: 100%;
     height: 300px;
     background-color: #1a1a1a;
+    color: #fafafa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,13 +360,254 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #fafafa;
 }
+
+
+i{
+    margin: 0 10px;
+    font-size: 2.4rem;
+}
+
+
+.our-restaurant{
+    width: 100%;
+    height: 1250px;
+    display: flex;
+    justify-content: center;
+}
+
+.our-restaurant__container{
+    width: 1200px;
+    height: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.our__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    width: 45%;
+    height: 550px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.our__card:first-child{
+    background: url(img/home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.our__card:nth-child(2){
+    text-align: center;
+    width: 45%;
+    height: 550px;
+    background-color: #99e54d;
+    border-radius: 50px;
+    color: #1a1a1a;
+    padding: 50px;
+}
+
+.our__card:nth-child(2) h5,h2,p,button{
+    margin: 15px 0;
+}
+
+.our__card:nth-child(2) h5{
+    text-transform: uppercase;
+    font-size: 1.125rem;
+}
+
+.our__card:nth-child(2) h2,button{
+    margin: 15px 0;
+}
+
+.our__card:nth-child(2) h2{
+    font-size: 3rem;
+}
+
+.our__card:nth-child(2) button{
+    width: 180px;
+    height: 55px;
+    border-radius: 50px;
+    background-color: #1d1d1f;
+    color: #fafafa;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .2s linear;
+}
+
+.our__card:nth-child(2) button:hover{
+    color: #ffff;
+     background-color: #000;
+     cursor: pointer;
+}
+
+
+.our__card:nth-child(3){
+    position: relative;
+    text-align: center;
+    width: 45%;
+    height: 550px;
+    background-color: #1a1a1a;
+    border-radius: 50px;
+    color: #fafafa;
+    padding: 50px;
+}
+
+.our__card:nth-child(3) h5,h2,p,button{
+    margin: 15px 0;
+}
+
+.our__card:nth-child(3) h5{
+    text-transform: uppercase;
+    font-size: 1.125rem;
+}
+
+.our__card:nth-child(3) h2,button{
+    margin: 15px 0;
+}
+
+.our__card:nth-child(3) h2{
+    font-size: 3rem;
+}
+
+.our__card:nth-child(3) button{
+    width: 180px;
+    height: 55px;
+    border-radius: 50px;
+    background-color: #8ae132;
+    color: #1a1a1a;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .2s linear;
+}
+
+.our__card:nth-child(3) button:hover{
+    color: #000;
+     background-color: #99e54d;
+     cursor: pointer;
+}
+.our__card:last-child{
+    background: url(landingImg/salad.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.blog{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.blog__container{
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_blog{
+    margin: 30px 0;
+}
+
+.card-blog__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    margin: 15px;
+    border-radius: 50px;
+    padding: 40px;
+}
+
+.cards h5{
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+
+.cards button{
+    width: 160px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #8ae132;
+    color: #1a1a1a;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .2s linear;
+}
+
+.cards button:hover{
+    color: #000;
+     background-color: #99e54d;
+     cursor: pointer;
+}
+
+.cards-text{
+    padding: 50px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.cards a{
+    font-family: 'Montserat',sans-serif;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    color: rgb(0, 0, 143);
+    text-transform: initial;
+}
+
+.keepUs ~ .keepUs{
+    background-color: #8ae132;
+    color: #1a1a1a;
+}
+
 
 @media screen and (min-width: 760px) and (max-width: 880px) {
     .our-menu{
         height: auto;
     }
+
+    .our-menu{
+        height: auto;
+    }
+
+   .header_our-menu h1{
+    font-size: 2rem;
+   }
+
+   .card_block{
+    width: 80%;
+    height: 100%;
+   }
+
+   .card{
+    width: 100%;
+    margin: 20px 0;
+   }
+
 }
 
 @media screen and (max-width: 764px) {
@@ -494,7 +737,7 @@
     }
 
     .our-menu{
-        height: auto
+        height: auto;
     }
 
    .header_our-menu h1{
@@ -508,6 +751,7 @@
 
    .card{
     width: 100%;
+    margin: 20px 0;
    }
 
    .keepUs{
@@ -528,5 +772,68 @@
    .keepUs__container p{
     font-size: 0.8rem;
    }
+
+   i{
+    margin: 0 5px;
+    font-size: 1.2rem;
+    }
+
+
+    .our-restaurant{
+        width: 100%;
+        height: auto;
+    }
+    
+    .our-restaurant__container{
+        width: 1200px;
+        height: 100%;
+        padding: 50px 0;
+    }
+    
+    .our__card{
+        margin: 10px 0;
+        width: 85%;
+        height: 400px;
+    }
+
+    .our__card:nth-child(2){
+        width: 85%;
+        height: 400px;
+        padding: 20px;
+    }
+    .our__card:nth-child(3){
+        width: 85%;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .our__card:nth-child(2) h2{
+        font-size: 2rem;
+    }
+
+    .our__card:nth-child(3) h2{
+        font-size: 2rem;
+    }
+
+    .blog{
+        height: auto;
+    }
+
+    .header_blog{
+        text-align: center;
+    }
+
+    .header_blog h1{
+        font-size: 2rem;
+    }
+    .header_blog p{
+        font-size: 0.93rem;
+    }
+
+    .cards{
+        width: 80%;
+        height: 300px;
+        padding: 10px 0;
+    }
 
 }
